@@ -1,4 +1,4 @@
-
+print("\n Guess the Number")
 iterations = 0
 
 while True:
@@ -16,9 +16,9 @@ while True:
         print(f"\n iterations : {iterations} , You're_close, But_High")
     else:
         print(f"\n iterations: {iterations}. Too_High")
-print(f"\n Total iterations: {iterations} ")
+print(f"\n Total iterations: {iterations} \n")
 if iterations == 1:
-    print ("\n You're Lucky! \n")
+    print (" You're Lucky! \n")
 
 
 

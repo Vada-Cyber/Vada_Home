@@ -14,7 +14,7 @@ while True:
     if enter_operation == "*":
             print(enter_number_1 * enter_number_2)
     elif enter_operation == "/":
-                print(enter_number_1 / enter_number_2)
+            print(enter_number_1 / enter_number_2)
     elif enter_operation == "+":
             print(enter_number_1 + enter_number_2)
     elif enter_operation == "-":
@@ -29,8 +29,6 @@ while True:
         break
 
 
-    # if continue_calculation =="no":
-  # break
 
 
 

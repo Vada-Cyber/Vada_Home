@@ -1,3 +1,4 @@
+
 print("\n Symple Calculator \n")
 
 continue_calculation = "yes"
@@ -7,8 +8,11 @@ continue_calculation = "yes"
 while True:
         
     enter_number_1 = float(input("First_number is: "))
+
     enter_operation = input("Enter_operation: ")
+  
     enter_number_2 = float(input("Second_number is: "))
+
 
 
     if enter_operation == "*":

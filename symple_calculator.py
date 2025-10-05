@@ -2,35 +2,61 @@
 print("\n Symple Calculator \n")
 
 continue_calculation = "yes"
-
+enter_number_n = 0
+enter_number_m = 0
 
      
 while True:
-        
-    enter_number_1 = float(input("First_number is: "))
+    while True:
+        enter_number_1 = input("First_number is: ")
+        try:
+            enter_number_1 = float(enter_number_1)
+            break
+        except ValueError:
+            print("wrong symbol - please enter a valid number")
 
-    enter_operation = input("Enter_operation: ")
-  
-    enter_number_2 = float(input("Second_number is: "))
+    while True:
+        enter_operation = input("Enter_operation: ")
+        if enter_operation in ("*","/","+","-","%","//","**" ):
+            break
+        else:
+            print("\n Wrong_Operator \n")
 
-
+    while True:
+        enter_number_2 = input("Second_number is: ")
+        try:
+            enter_number_2 = float(enter_number_2)
+            break
+        except ValueError:
+            print("wrong symbol - please enter a valid number")
 
     if enter_operation == "*":
-            print(enter_number_1 * enter_number_2)
+        print(enter_number_1 * enter_number_2)
     elif enter_operation == "/":
-            print(enter_number_1 / enter_number_2)
+        if enter_number_2 != 0:
+           print(enter_number_1 / enter_number_2)
+        else:
+           print ( " deviation to 0 is restricted ")
     elif enter_operation == "+":
-            print(enter_number_1 + enter_number_2)
+        print(enter_number_1 + enter_number_2)
     elif enter_operation == "-":
-            print(enter_number_1 - enter_number_2)
-    else:
-            print("Wrong_Operator")
-         
-    continue_calculation = input(f"continue_calculation ? (yes/no): ").lower()
+        print(enter_number_1 - enter_number_2)
+    elif enter_operation == "%":
+        print(enter_number_1 % enter_number_2)
+    elif enter_operation == "//":
+        print(enter_number_1 // enter_number_2)
+    elif enter_operation == "**":
+        print(enter_number_1 ** enter_number_2)
 
-    if continue_calculation != "yes" and continue_calculation != "y":
-        print("End of Calculations")
-        break
+    while True:
+        continue_calculation = input(f"continue_calculation ? (yes/no): ").lower()
+        if continue_calculation in ("yes","y"):
+            break
+        elif continue_calculation in ("no", "n"):
+            print ( "End of Calculation")
+            EXIT()
+        else:
+             print("Wrong input - please enter 'yes' or 'no'" )
 
 
 

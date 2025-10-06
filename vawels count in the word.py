@@ -3,7 +3,8 @@ word = input(">>> ")
 for c in word:
     print(c)
 
-vowels = "aeiouAEIOU"
+# vowels = "aeiouAEIOU"
+vowels = word
 
 for vowel in vowels:
     vowel_count = word.count(vowel)

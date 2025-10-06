@@ -11,10 +11,10 @@ while True:
 
     if number_random % 3 != 0:
         print(f"{number_random}")
-        continue
 
-    if number_random % 2 == 0:
-        continue
+        if number_random % 2 == 0:
+            print(f"number is : {number_random}")
+            continue
             
     else:
         num = int(number_random / 3)

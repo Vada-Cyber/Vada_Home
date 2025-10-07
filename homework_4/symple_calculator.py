@@ -54,7 +54,7 @@ while True:
             break
         elif continue_calculation in ("no", "n"):
             print ( "End of Calculation")
-            EXIT()
+            exit()
         else:
              print("Wrong input - please enter 'yes' or 'no'" )
 

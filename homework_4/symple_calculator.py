@@ -2,15 +2,15 @@
 print("\n Symple Calculator \n")
 
 continue_calculation = "yes"
-enter_number_n = 0
-#enter_number_m = 0
+enter_number_1 = 0
+enter_number_2 = 0
 
      
 while True:
     while True:
-        enter_number_n = input("number is: ")
+        enter_number_1 = input("First number is: ")
         try:
-            enter_number_n = float(enter_number_n)
+            enter_number_1 = float(enter_number_1)
             break
         except ValueError:
             print("wrong symbol - please enter a valid number")
@@ -21,6 +21,7 @@ while True:
             break
         else:
             print("\n Wrong_Operator \n")
+
 
     while True:
         enter_number_2 = input("Second_number is: ")
@@ -38,7 +39,7 @@ while True:
         else:
            print ( " deviation to 0 is restricted ")
     elif enter_operation == "+":
-        print(enter_number_n + enter_number_2)
+        print(enter_number_1 + enter_number_2)
     elif enter_operation == "-":
         print(enter_number_1 - enter_number_2)
     elif enter_operation == "%":
@@ -53,7 +54,7 @@ while True:
         if continue_calculation in ("yes","y"):
             break
         elif continue_calculation in ("no", "n"):
-            print ( "End of Calculation")
+            print ( "End of Calculation \n")
             exit()
         else:
              print("Wrong input - please enter 'yes' or 'no'" )

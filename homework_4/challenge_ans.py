@@ -17,7 +17,7 @@ while True:
     elif num.isdecimal() == False:
         print("enter valid number")
         continue
-    elif int(num) % 2 != 0 and int(num) % 7 != 0:
+    elif int(num) % 2 != 0 and int(num) % 7 != 0:  # Necessary condition
         print("odd number")
         odd_numbers.append(int(num))
         print(f"odds list : {odd_numbers} ")
